@@ -26,7 +26,7 @@ It includes monthly sales trends, top products, and regional sales analysis.
 ---
 
 ## 1. Dataset
-You can download the dataset here:  Free dataset: Superstore Sales Dataset (Kaggle)
+You can download the dataset here:  Free dataset: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
 
 **Sample preview (first 10 rows):**
 
