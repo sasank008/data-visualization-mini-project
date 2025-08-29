@@ -8,13 +8,13 @@
 ### The Decline of Arctic Sea Ice (1979–2021) #36
 🔗 [View my comment](https://github.com/bsc-iitm/Data-Visualization-Design-CS4001/issues/36#issuecomment-2614490942)
 
-### Issue #44
+### Centre’s Share in States’ Revenue Has Surged in the Last Decade #44
 🔗 [View my comment](https://github.com/bsc-iitm/Data-Visualization-Design-CS4001/issues/44#issuecomment-2730362789)
 
-### Issue #45
+### Comparison of Data Visualization Tools Using Bubble Charts #45
 🔗 [View my comment](https://github.com/bsc-iitm/Data-Visualization-Design-CS4001/issues/45#issuecomment-2761899941)
 
-### Issue #43
+### Effective visualization of data  #43
 🔗 [View my comment](https://github.com/bsc-iitm/Data-Visualization-Design-CS4001/issues/43#issuecomment-2661506228)
 
 ---
@@ -51,8 +51,8 @@ Download the Superstore dataset here: [Superstore.csv](data/Superstore.csv)
 ## Charts (Click to Open)
 
 - [Monthly Sales Trend](src/monthly_sales_trend.png)  
-- [Top Products](src/top_products.png)  
-- [Region Sales](src/region_sales.png)  
+- [Top Products](charts/top_products.png)  
+- [Region Sales](charts/region_sales.png)  
 
 ## Python Analysis Code
 
