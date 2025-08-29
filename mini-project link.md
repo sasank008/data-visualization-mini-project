@@ -58,14 +58,11 @@ Download the dataset here: [Superstore.csv](data/Superstore.csv)
 
 ## Charts
 
-### 1. Monthly Sales Trend
-![Monthly Sales Trend](charts/monthly_sales_trend.png)
+[![Monthly Sales Trend](charts/monthly_sales_trend.png)](charts/monthly_sales_trend.png)
 
-### 2. Top Products
-![Top Products](charts/top_products.png)
+[![Top Products](charts/top_products.png)](charts/top_products.png)
 
-### 3. Region Sales
-![Region Sales](charts/region_sales.png)
+[![Region Sales](charts/region_sales.png)](charts/region_sales.png)
 
 
 ## 2. Python Code
