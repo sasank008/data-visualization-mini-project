@@ -1,8 +1,6 @@
-# Mini Projects & Assignment Proofs
+# Mini Projects & Assignment . 
 
 ## 📊 Mini Projects
-(keep your existing mini projects content here)
-
 ---
 
 ## 📝 Assignment Comments (Data Visualization Design CS4001)
