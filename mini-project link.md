@@ -68,6 +68,8 @@ This project analyzes retail sales data and generates charts for business insigh
 ### 1. Monthly Sales Trend
 [Open Monthly Sales Trend Chart](charts/monthly_sales_trend.png)
 
+C:\Users\sasank moulidhar\Downloads\retail-sales-analytics\monthly_sales_trend.png
+
 ### 2. Top Products
 [Open Top Products Chart](charts/top_products.png)
 
