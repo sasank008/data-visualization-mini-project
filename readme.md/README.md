@@ -26,3 +26,4 @@ Created by: Sasank Moulidhar (GitHub: sasank008)
 
 ### Sales Distribution by Region
 ![Region Sales](charts/region_sales.png)
+
