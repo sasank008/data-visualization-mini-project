@@ -58,11 +58,37 @@ Download the dataset here: [Superstore.csv](data/Superstore.csv)
 
 ## Charts
 
-[![Monthly Sales Trend](charts/monthly_sales_trend.png)](charts/monthly_sales_trend.png)
+# Retail Sales Analytics Mini-Project
 
-[![Top Products](charts/top_products.png)](charts/top_products.png)
+This project analyzes retail sales data and generates charts for business insights. You can view the charts by clicking the links below.
 
-[![Region Sales](charts/region_sales.png)](charts/region_sales.png)
+---
+
+## Dataset
+[Download Superstore Dataset](data/Superstore.csv)
+
+---
+
+## Charts
+
+### 1. Monthly Sales Trend
+[Open Monthly Sales Trend Chart](charts/monthly_sales_trend.png)
+
+### 2. Top Products
+[Open Top Products Chart](charts/top_products.png)
+
+### 3. Region Sales
+[Open Region Sales Chart](charts/region_sales.png)
+
+---
+
+## Code
+All the analysis code is in: `src/analysis.py`
+
+You can run it in VS Code to reproduce the charts:
+
+```bash
+python src/analysis.py
 
 
 ## 2. Python Code
