@@ -26,7 +26,7 @@ It includes monthly sales trends, top products, and regional sales analysis.
 ---
 
 ## 1. Dataset
-You can download the dataset here: [Superstore.csv](data/Superstore.csv)  
+You can download the dataset here:  Free dataset: Superstore Sales Dataset (Kaggle)
 
 **Sample preview (first 10 rows):**
 
@@ -39,7 +39,6 @@ It includes monthly sales trends, top products, and regional sales analysis.
 ---
 
 ## 1. Dataset
-Download the dataset here: [Superstore.csv](data/Superstore.csv)  
 
 **Sample preview (first 10 rows):**
 
@@ -61,11 +60,6 @@ Download the dataset here: [Superstore.csv](data/Superstore.csv)
 # Retail Sales Analytics Mini-Project
 
 This project analyzes retail sales data and generates charts for business insights. You can view the charts by clicking the links below.
-
----
-
-## Dataset
-[Download Superstore Dataset](data/Superstore.csv)
 
 ---
 
