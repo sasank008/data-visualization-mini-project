@@ -65,18 +65,12 @@ This project analyzes retail sales data and generates charts for business insigh
 
 ## Charts
 
-### 1. Monthly Sales Trend
-[Open Monthly Sales Trend Chart](charts/monthly_sales_trend.png)
+![Monthly Sales Trend](charts/monthly_sales_trend.png)
 
-C:\Users\sasank moulidhar\Downloads\retail-sales-analytics\monthly_sales_trend.png
+![Top Products](charts/top_products.png)
 
-### 2. Top Products
-[Open Top Products Chart](charts/top_products.png)
+![Region Sales](charts/region_sales.png)
 
-### 3. Region Sales
-[Open Region Sales Chart](charts/region_sales.png)
-
----
 
 ## Code
 All the analysis code is in: `src/analysis.py`
