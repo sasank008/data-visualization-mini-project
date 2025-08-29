@@ -56,7 +56,17 @@ Download the dataset here: [Superstore.csv](data/Superstore.csv)
 | 9      | CA-2016-152156 | 11/8/2016  | 11/11/2016| Standard  | CG-12521    | Claire Gute   | Consumer| USA     | Henderson | Kentucky | 42420 | South | FUR-CH-10000455 | Furniture | Chairs    | Office Star Deluxe Chair | 320.00 | 2 | 0.00 | 45.00 |
 | 10     | US-2015-108967 | 10/12/2015 | 10/19/2015| Standard  | SO-20337    | Sean O'Donnell | Consumer | USA | Fort Lauderdale | Florida | 33311 | South | TEC-PR-10000500 | Technology | Printers | HP LaserJet Printer | 500.00 | 1 | 0.15 | 25.00 |
 
----
+## Charts
+
+### 1. Monthly Sales Trend
+![Monthly Sales Trend](charts/monthly_sales_trend.png)
+
+### 2. Top Products
+![Top Products](charts/top_products.png)
+
+### 3. Region Sales
+![Region Sales](charts/region_sales.png)
+
 
 ## 2. Python Code
 
