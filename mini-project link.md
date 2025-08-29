@@ -50,7 +50,7 @@ Download the Superstore dataset here: [Superstore.csv](data/Superstore.csv)
 
 ## Charts (Click to Open)
 
-- [Monthly Sales Trend](src/monthly_sales_trend.png)  
+- [Monthly Sales Trend](charts/monthly_sales_trend.png)  
 - [Top Products](charts/top_products.png)  
 - [Region Sales](charts/region_sales.png)  
 
