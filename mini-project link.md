@@ -5,7 +5,7 @@
 
 ## 📝 Assignment Comments (Data Visualization Design CS4001)
 
-### Issue #36
+### The Decline of Arctic Sea Ice (1979–2021) #36
 🔗 [View my comment](https://github.com/bsc-iitm/Data-Visualization-Design-CS4001/issues/36#issuecomment-2614490942)
 
 ### Issue #44
