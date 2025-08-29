@@ -19,29 +19,71 @@
 
 ---
 
-## Retail Sales Analytics
+# Retail Store Sales Analytics Mini-Project
 
-**Description:**  
-This project analyzes retail sales data to generate business insights using Python. It covers sales trends, top-selling products, and regional performance, all visualized with charts.
+This mini-project analyzes retail sales data from a Superstore dataset to generate business insights using Python. All charts are generated using `matplotlib` and `seaborn`.
 
-**Technologies Used:**  
-Python, Pandas, Matplotlib, Seaborn, Jupyter Notebook
+---
 
-**Project Files & Structure:**  
+## Dataset
 
+Download the Superstore dataset here: [Superstore.csv](data/Superstore.csv)
 
-**Key Steps & Highlights:**  
-1. Loaded and cleaned the Superstore dataset.  
-2. Generated visualizations:  
-   - Monthly Sales Trend  
-   - Top Products  
-   - Regional Sales  
-3. Automated analysis using `src/analysis.py`.  
-4. Documented insights in `notebooks/analysis.ipynb`.  
-5. All charts saved as PNGs for quick viewing.  
+---
 
-**How to Run:**  
-1. Install Python dependencies:  
-   ```bash
-   pip install -r requirements.txt
+## First 10 Rows of the Dataset
+
+| Row ID | Order ID       | Order Date | Ship Mode | Customer ID | Customer Name | Segment | Country | City      | State | Postal Code | Region | Product ID | Category | Sub-Category | Product Name | Sales   | Quantity | Discount | Profit   |
+|--------|----------------|------------|----------|-------------|---------------|---------|--------|-----------|-------|-------------|--------|------------|----------|--------------|--------------|--------|----------|----------|---------|
+| 1      | CA-2016-152156 | 11/8/2016  | Second Class | CG-12520  | Claire Gute   | Consumer | US     | Henderson | KY    | 42420       | South  | FUR-BO-10001798 | Furniture | Bookcases   | Bush Somerset Collection Bookcase | 261.96 | 2        | 0        | 41.91   |
+| 2      | CA-2016-152156 | 11/8/2016  | Second Class | CG-12520  | Claire Gute   | Consumer | US     | Henderson | KY    | 42420       | South  | FUR-CH-10000454 | Furniture | Chairs      | Hon Deluxe Fabric Upholstered Stacking Chairs | 731.94 | 3        | 0        | 219.58  |
+| 3      | CA-2016-138688 | 6/12/2016  | Second Class | DV-13045  | Darrin Van Huff | Corporate | US  | Los Angeles | CA    | 90032       | West   | FUR-TA-10000577 | Furniture | Tables      | Bretford CR4500 Series Slim Rectangular Table | 957.58 | 5        | 0        | 90.51   |
+| 4      | US-2015-108966 | 10/11/2015 | Standard Class | SO-20335  | Sean O'Donnell | Home Office | US  | Fort Lauderdale | FL | 33311       | South  | OFF-LA-10000240 | Office Supplies | Labels    | Self-Adhesive Address Labels for Typewriters | 22.37  | 2        | 0        | 2.52    |
+| 5      | US-2015-108966 | 10/11/2015 | Standard Class | SO-20335  | Sean O'Donnell | Home Office | US  | Fort Lauderdale | FL | 33311       | South  | FUR-CH-10000454 | Furniture | Chairs      | Hon Deluxe Fabric Upholstered Stacking Chairs | 731.94 | 3        | 0        | 219.58  |
+| 6      | US-2015-108966 | 10/11/2015 | Standard Class | SO-20335  | Sean O'Donnell | Home Office | US  | Fort Lauderdale | FL | 33311       | South  | TEC-PH-10002275 | Technology | Phones     | Plantronics CS50 Headset | 207.36 | 2        | 0        | 41.47   |
+| 7      | CA-2016-161389 | 12/6/2016  | Second Class | SO-20335  | Sean O'Donnell | Consumer | US     | Los Angeles | CA    | 90032       | West   | FUR-BO-10001798 | Furniture | Bookcases  | Bush Somerset Collection Bookcase | 261.96 | 2        | 0        | 41.91   |
+| 8      | CA-2016-138688 | 6/12/2016  | Second Class | DV-13045  | Darrin Van Huff | Corporate | US  | Los Angeles | CA    | 90032       | West   | FUR-TA-10000577 | Furniture | Tables      | Bretford CR4500 Series Slim Rectangular Table | 957.58 | 5        | 0        | 90.51   |
+| 9      | US-2015-108966 | 10/11/2015 | Standard Class | SO-20335  | Sean O'Donnell | Home Office | US  | Fort Lauderdale | FL | 33311       | South  | OFF-LA-10000240 | Office Supplies | Labels    | Self-Adhesive Address Labels for Typewriters | 22.37  | 2        | 0        | 2.52    |
+| 10     | US-2015-108966 | 10/11/2015 | Standard Class | SO-20335  | Sean O'Donnell | Home Office | US  | Fort Lauderdale | FL | 33311       | South  | FUR-CH-10000454 | Furniture | Chairs      | Hon Deluxe Fabric Upholstered Stacking Chairs | 731.94 | 3        | 0        | 219.58  |
+
+---
+
+## Python Analysis Code
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load dataset
+df = pd.read_csv("data/Superstore.csv", encoding="latin1")
+print("CSV loaded successfully! First 10 rows:")
+print(df.head(10))
+
+# --- Charts ---
+# Monthly Sales Trend
+monthly_sales = df.groupby('Order Date')['Sales'].sum().head(10)
+plt.figure(figsize=(10,5))
+monthly_sales.plot(kind='line')
+plt.title("Monthly Sales Trend (First 10 rows)")
+plt.xlabel("Order Date")
+plt.ylabel("Sales")
+plt.savefig("charts/monthly_sales_trend.png")
+plt.close()
+
+# Top Products
+top_products = df.groupby('Product Name')['Sales'].sum().sort_values(ascending=False).head(10)
+plt.figure(figsize=(10,5))
+sns.barplot(x=top_products.values, y=top_products.index, palette="viridis")
+plt.title("Top Products by Sales")
+plt.savefig("charts/top_products.png")
+plt.close()
+
+# Region Sales
+region_sales = df.groupby('Region')['Sales'].sum()
+plt.figure(figsize=(8,5))
+region_sales.plot(kind='bar')
+plt.title("Region Sales")
+plt.savefig("charts/region_sales.png")
+plt.close()
 
