@@ -48,6 +48,12 @@ Download the Superstore dataset here: [Superstore.csv](data/Superstore.csv)
 
 ---
 
+## Charts (Click to Open)
+
+- [Monthly Sales Trend](charts/monthly_sales_trend.png)  
+- [Top Products](charts/top_products.png)  
+- [Region Sales](charts/region_sales.png)  
+
 ## Python Analysis Code
 
 ```python
@@ -55,12 +61,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load dataset
 df = pd.read_csv("data/Superstore.csv", encoding="latin1")
-print("CSV loaded successfully! First 10 rows:")
 print(df.head(10))
 
-# --- Charts ---
 # Monthly Sales Trend
 monthly_sales = df.groupby('Order Date')['Sales'].sum().head(10)
 plt.figure(figsize=(10,5))
