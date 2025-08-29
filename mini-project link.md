@@ -50,9 +50,9 @@ Download the Superstore dataset here: [Superstore.csv](data/Superstore.csv)
 
 ## Charts (Click to Open)
 
-- [Monthly Sales Trend](charts/monthly_sales_trend.png)  
-- [Top Products](charts/top_products.png)  
-- [Region Sales](charts/region_sales.png)  
+- [Monthly Sales Trend](src/monthly_sales_trend.png)  
+- [Top Products](src/top_products.png)  
+- [Region Sales](src/region_sales.png)  
 
 ## Python Analysis Code
 
